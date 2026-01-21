@@ -2,15 +2,15 @@
 .mg-grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 60px 30px; /* Zwiększony odstęp pionowy, bo obrazki wystają */
+    gap: 80px 30px; /* Zwiększony odstęp pionowy, bo obrazki wystają */
     padding: 50px 0 20px 0; /* Górny padding, by pierwszy rząd nie został ucięty */
 }
 
 /* Karta */
 .mg-grid-card {
-    background: #ffffff;
+    background: #0d081b;
     border-radius: 20px;
-    border: 1px solid #eaeaea;
+    border: 1px solid #6100b3;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -26,27 +26,23 @@
 
 /* Obrazek wystający 30px nad ramkę */
 .mg-grid-image-link {
-    margin: -30px auto 0 auto; /* -30px wyciąga obrazek w górę */
-    width: 85%; /* Obrazek nieco węższy od karty dla lepszego efektu */
+    margin: -80px auto 0 auto;
+    width: 90%;
     display: block;
     z-index: 2;
 }
 
 .mg-grid-image {
     width: 100%;
-    /* Wymuszenie proporcji 1:1 */
-    aspect-ratio: 1 / 1; 
-    background-size: contain; /* Pokazuje cały obrazek bez ucinania */
+    aspect-ratio: 1 / 1;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: #f9f9f9;
-    border-radius: 15px;
-    box-shadow: 0 15px 25px rgba(0,0,0,0.1);
 }
 
 /* Treść wewnątrz karty */
 .mg-grid-content {
-    padding: 20px 25px 25px 25px;
+    padding: 0px 25px 25px 25px;
     text-align: center; /* Wyśrodkowanie treści dla lepszego balansu */
 }
 
@@ -58,7 +54,7 @@
 
 .mg-grid-title a {
     text-decoration: none;
-    color: #1a1a1a;
+    color: #02cb21;
 }
 
 /* Styl kategorii */
