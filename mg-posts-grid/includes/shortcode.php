@@ -113,7 +113,7 @@ while ( $query->have_posts() ) {
             if ( ! empty( $display_cat ) ) {
                 $output .= '<span class="mg-grid-category">' . esc_html( $display_cat ) . '</span>';
             }
-            $output .= '<div class="mg-grid-excerpt">' . wp_trim_words( get_the_excerpt(), 12 ) . '</div>';
+            $output .= '<div class="mg-grid-excerpt">' . wp_trim_words( get_the_excerpt(), 50 ) . '</div>';
             $output .= '</div>';
             $output .= '</article>';
         }
@@ -126,4 +126,5 @@ while ( $query->have_posts() ) {
 
     return $output;
 }
+
 add_shortcode( 'mg_posts_grid', 'mg_posts_grid_display' );
