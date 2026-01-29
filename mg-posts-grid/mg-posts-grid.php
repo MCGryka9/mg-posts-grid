@@ -2,7 +2,7 @@
 /**
  * Plugin Name: MG Posts Grid
  * Description: Responsywna siatka wpisów z dynamicznymi kategoriami.
- * Version: 1.1
+ * Version: 2.0
  * Author: Gryczan.eu
  */
 
@@ -68,4 +68,5 @@ add_action( 'wp_enqueue_scripts', 'mg_posts_grid_assets' );
 require_once MG_GRID_PATH . 'includes/shortcode.php';
 
 // 5. Ładowanie panelu administracyjnego
+
 require_once MG_GRID_PATH . 'includes/admin-page.php';
