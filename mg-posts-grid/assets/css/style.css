@@ -63,7 +63,6 @@
     font-size: 0.8rem;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: #0073aa; /* Możesz zmienić na kolor swojej marki */
     font-weight: 600;
     margin-bottom: 15px;
 }
@@ -90,4 +89,26 @@
     letter-spacing: 0.5px;
     color: #888; /* Delikatny szary lub kolor Twojej marki */
     margin-bottom: 12px;
+}
+
+.mg-grid-filter-wrapper {
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+#mg-grid-cat-filter {
+    padding: 10px 15px;
+    border: 1px solid #6100b3;
+    border-radius: 8px;
+    background: #0d081b;
+    font-size: 14px;
+    color: white;
+    min-width: 200px;
+    cursor: pointer;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+#mg-grid-cat-filter:focus {
+    outline: 2px solid #02cb21;
 }

@@ -30,7 +30,7 @@ function mg_posts_grid_admin_html() {
                 <tbody>
                     <tr>
                         <td><strong>type</strong></td>
-                        <td>Typ postu (slug), np. <code>post</code>, <code>product</code>, <code>portfolio_item</code>.</td>
+                        <td>Typ postu (slug), np. <code>post</code>, <code>product</code>, <code>realizacja</code>.</td>
                         <td><code>post</code></td>
                     </tr>
                     <tr>
@@ -53,6 +53,11 @@ function mg_posts_grid_admin_html() {
                         <td>Slug konkretnej kategorii wewnątrz <code>taxonomy</code>.</td>
                         <td>-</td>
                     </tr>
+                     <tr>
+                        <td><strong>filter</strong></td>
+                        <td>Wyświetl filtr (dropdown) <code>0</code> off, <code>1</code> on.</td>
+                        <td>-</td>
+                    </tr>
                 </tbody>
             </table>
         </div>
@@ -66,8 +71,8 @@ function mg_posts_grid_admin_html() {
             <p><strong>2. Wyświetlanie projektów z taksonomii "typ-projektu" o nazwie "web-design":</strong><br>
             <code>[mg_posts_grid type="portfolio" taxonomy="typ-projektu" term="web-design"]</code></p>
             
-            <p><strong>3. Standardowe wpisy z kategorii "Blog":</strong><br>
-            <code>[mg_posts_grid count="3" category="blog"]</code></p>
+            <p><strong>3. Standardowe wpisy z kategorii "Blog" z włączonymi filtrami:</strong><br>
+            <code>[mg_posts_grid count="3" category="blog" filter="1"]</code></p>
         </div>
     </div>
     <?php
